@@ -19,10 +19,16 @@ const NavBar = () => {
           Bikers Point
         </span>
       </Navbar.Brand>
-      <div className="flex md:order-2">
-        <Button>Get started</Button>
+      <div className="flex md:order-2 gap-3 ">
+        <Button href="./login" gradientDuoTone="purpleToPink">
+          login
+        </Button>
+        <Button href="./signup" gradientDuoTone="purpleToPink">
+          Sign up
+        </Button>
         <Navbar.Toggle />
       </div>
+
       <Navbar.Collapse>
         <Navbar.Link href="./" active>
           Home

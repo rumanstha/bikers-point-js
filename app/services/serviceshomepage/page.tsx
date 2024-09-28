@@ -23,7 +23,7 @@ const ServiceAccesoriesPage = () => {
     {
       id: 4,
       img: "img-assories.png",
-      title: "assories",
+      title: "Accessories",
     },
     {
       id: 5,
@@ -36,12 +36,12 @@ const ServiceAccesoriesPage = () => {
       <div className="text-center">
         <h1 className="text-black text-3xl font-semibold mb-5">Services</h1>
       </div>
-      <div className="grid grid-cols-5 sm:grid-cols-2 md:grid-cols-5  gap-8">
-        {data.map((item) => (
-          <Card key={item.id} className="max-w-sm mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+        {data.map((list) => (
+          <Card key={list.id} className="max-w-sm mx-auto">
             <Image
-              src={`/${item.img}`}
-              alt={item.title}
+              src={`/${list.img}`}
+              alt={list.title}
               width={200}
               height={100}
               className="rounded-t-lg"
@@ -49,7 +49,7 @@ const ServiceAccesoriesPage = () => {
             <div className="p-5">
               <a href="#">
                 <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                  {item.title}
+                  {list.title}
                 </h5>
               </a>
             </div>

@@ -3,6 +3,7 @@ import CarouselImageComponet from "../home/carouselImage/page";
 
 import App from "next/app";
 import NavBar from "../home/navBar/page";
+import VideoPage from "./video/page";
 
 const HomePage = () => {
   return (

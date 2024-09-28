@@ -4,7 +4,7 @@ import "./globals.css";
 import { link } from "fs";
 import Image from "next/image";
 import NavBar from "./home/navBar/page";
-import { Component } from "./footer/page";
+import { BikersPointFooter } from "./footer/page";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,7 +35,7 @@ export default function RootLayout({
         <NavBar />
 
         {children}
-        <Component />
+        <BikersPointFooter />
       </body>
     </html>
   );
