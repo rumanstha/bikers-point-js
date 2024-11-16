@@ -34,7 +34,7 @@ const TablePage = () => {
 
       <Table hoverable>
         <Table.Head>
-          <Table.HeadCell>Product name</Table.HeadCell>
+          <Table.HeadCell>Products</Table.HeadCell>
           <Table.HeadCell>Avilable Color</Table.HeadCell>
           <Table.HeadCell>Category</Table.HeadCell>
           <Table.HeadCell>Price Range</Table.HeadCell>

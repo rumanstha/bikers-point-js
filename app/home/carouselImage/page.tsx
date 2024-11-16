@@ -9,7 +9,7 @@ const CarouselImageComponent = () => {
       <Carousel slide={true} className="h-full">
         <div className="relative w-full h-full">
           <Image
-            src="/carousel.png"
+            src="/crouselquix1.webp"
             alt="First Image"
             layout="fill" // This makes the image fill the container
             objectFit="cover" // Ensures the image covers the entire container while maintaining aspect ratio
@@ -17,7 +17,7 @@ const CarouselImageComponent = () => {
         </div>
         <div className="relative w-full h-full">
           <Image
-            src="/ver2.jpg"
+            src="/crouselquix2.webp"
             alt="Second Image"
             layout="fill"
             objectFit="cover"
@@ -25,7 +25,7 @@ const CarouselImageComponent = () => {
         </div>
         <div className="relative w-full h-full">
           <Image
-            src="/ver3.jpg"
+            src="/crouselquix3.PNG"
             alt="Third Image"
             layout="fill"
             objectFit="cover"

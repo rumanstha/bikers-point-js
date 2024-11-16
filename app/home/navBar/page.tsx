@@ -8,7 +8,7 @@ const NavBar = () => {
     <Navbar fluid rounded>
       <Navbar.Brand href="https://flowbite-react.com">
         <img
-          src="/favicon.png"
+          src="/favicon.ico"
           className="mr-3 h-4 sm:h-8 "
           alt="Flowbite React Logo"
         />
@@ -16,7 +16,7 @@ const NavBar = () => {
           style={{ color: "#3a2f2f" }}
           className="self-center  text-xl font-bold "
         >
-          Bikers Point
+          QUIXWEARS
         </span>
       </Navbar.Brand>
       <div className="flex md:order-2 gap-3 ">

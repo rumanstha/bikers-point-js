@@ -43,42 +43,42 @@ const ImageGallery = () => {
 
 export default ImageGallery;
 
-const data = [
-  {
-    id: 1,
-    img: "helmet1.png",
-    title: "Sport Helmet",
-    rating: 4.5,
-    price: "2000",
-  },
-  {
-    id: 2,
-    img: "helmet2.png",
-    title: "Classic Helmet",
-    rating: 4.0,
-    price: "1500",
-  },
-  {
-    id: 3,
-    img: "helmet3.png",
-    title: "Full Face Helmet",
-    rating: 4.8,
-    price: "3000",
-  },
-  {
-    id: 4,
-    img: "helmet4.png",
-    title: "Half Face Helmet",
-    rating: 3.8,
-    price: "1200",
-  },
-  {
-    id: 5,
-    img: "helmet5.png",
-    title: "Adventure Helmet",
-    rating: 5.0,
-    price: "3500",
-  },
-];
+// const data = [
+//   {
+//     id: 1,
+//     img: "helmet1.png",
+//     title: "Sport Helmet",
+//     rating: 4.5,
+//     price: "2000",
+//   },
+//   {
+//     id: 2,
+//     img: "helmet2.png",
+//     title: "Classic Helmet",
+//     rating: 4.0,
+//     price: "1500",
+//   },
+//   {
+//     id: 3,
+//     img: "helmet3.png",
+//     title: "Full Face Helmet",
+//     rating: 4.8,
+//     price: "3000",
+//   },
+//   {
+//     id: 4,
+//     img: "helmet4.png",
+//     title: "Half Face Helmet",
+//     rating: 3.8,
+//     price: "1200",
+//   },
+//   {
+//     id: 5,
+//     img: "helmet5.png",
+//     title: "Adventure Helmet",
+//     rating: 5.0,
+//     price: "3500",
+//   },
+// ];
 
-data.map((iter) => <>{iter.title}</>);
+// data.map((iter) => <>{iter.title}</>);

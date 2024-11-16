@@ -10,13 +10,18 @@ const LoginPage = () => {
         {/* Image Section */}
         <div className="w-1/2 hidden md:block">
           <img
-            src="/login.jpg"
+            src="/Capture6.PNG"
             alt="Sign up"
             className="object-cover h-full w-full "
           />
         </div>
         <div className="w-full md:w-1/2  justify-center items-center">
-          <img src="/favicon.png" alt="fav" />
+          <img
+            src="/favicon.ico"
+            alt="fav"
+            className="w-10 h-10
+          "
+          />
           <Card className="w-full max-w-lg h-96">
             <form className="flex flex-col gap-4">
               <div>

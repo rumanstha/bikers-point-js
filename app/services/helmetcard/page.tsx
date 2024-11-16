@@ -1,54 +1,63 @@
 "use client";
-import { Card } from "flowbite-react";
-import React from "react";
+import { Card, Button, Modal } from "flowbite-react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { Button, Navbar } from "flowbite-react";
+import { HiOutlineExclamationCircle } from "react-icons/hi";
+import buyPage from "@/app/buy/page";
 
-const ServiceCard = () => {
+export default function ServiceCard() {
+  const [openModal, setOpenModal] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
+
   const data = [
     {
       id: 1,
-      img: "her.png",
-      title: "Soman Helmet , luffy graphic",
+      img: "Capture.PNG",
+      title: "GTR T-shirt, premium quality",
       rating: 4.5,
-      price: "9,000",
+      price: "1,300",
     },
     {
       id: 2,
-      img: "kyt.png",
-      title: "Kyt Helmet",
+      img: "Capture2.PNG",
+      title: "Billie Eilish T-shirt, cotton fabric",
       rating: 4.0,
-      price: "25,500",
+      price: "1,500",
     },
     {
       id: 3,
-      img: "ls2.png",
-      title: "ls2 helmet,Full Face Helmet",
+      img: "Capture3.PNG",
+      title: "Custom made T-shirt",
       rating: 4.8,
-      price: "10,000",
+      price: "1,500",
     },
     {
       id: 4,
-      img: "helmet2.png",
-      title: "Spyder helmet , mat black",
+      img: "Capture4.PNG",
+      title: "Custom T-shirt, white",
       rating: 3.8,
-      price: "9,500",
+      price: "1,200",
     },
     {
       id: 5,
-      img: "helmet3.png",
-      title: "Drift helmet,Adventure Helmet",
+      img: "Capture7.PNG",
+      title: "Printed T-shirt, black",
       rating: 5.0,
-      price: "3,500",
+      price: "1,300",
     },
     {
       id: 6,
-      img: "royal.png",
-      title: "Royal helmet,shinny black",
+      img: "Capture6.PNG",
+      title: "Vintage T-shirt with custom design",
       rating: 5.0,
-      price: "5,500",
+      price: "1,600",
     },
   ];
+
+  const handleAddToCart = (item) => {
+    setSelectedItem(item);
+    setOpenModal(true);
+  };
 
   return (
     <div className="container mx-auto my-10">
@@ -56,9 +65,8 @@ const ServiceCard = () => {
         <h1 className="text-black text-3xl font-semibold mb-5">Services</h1>
       </div>
       <div>
-        <h1 className="text-2xl text-black font-semibold p-7">Helmets</h1>
+        <h1 className="text-2xl text-black font-semibold p-7">T-Shirts</h1>
       </div>
-      <br></br>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {data.map((item) => (
           <Card key={item.id} className="max-w-sm mx-auto">
@@ -76,7 +84,6 @@ const ServiceCard = () => {
                 </h5>
               </a>
               <div className="mb-5 mt-2.5 flex items-center">
-                {/* Display stars based on rating */}
                 {Array.from({ length: 5 }, (_, index) => (
                   <svg
                     key={index}
@@ -100,7 +107,10 @@ const ServiceCard = () => {
                 <span className="text-2xl font-bold text-gray-900 dark:text-white">
                   Rs {item.price}
                 </span>
-                <Button href="#" gradientDuoTone="purpleToPink">
+                <Button
+                  gradientDuoTone="purpleToPink"
+                  onClick={() => handleAddToCart(item)}
+                >
                   Add to cart
                 </Button>
               </div>
@@ -108,8 +118,38 @@ const ServiceCard = () => {
           </Card>
         ))}
       </div>
+
+      {/* Modal Component */}
+      {selectedItem && (
+        <Modal
+          show={openModal}
+          size="md"
+          onClose={() => setOpenModal(false)}
+          popup
+        >
+          <Modal.Header />
+          <Modal.Body>
+            <div className="text-center">
+              <HiOutlineExclamationCircle className="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200" />
+              <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
+                you wannna buy {selectedItem.title} ?
+              </h3>
+              <div className="flex justify-center gap-4">
+                <Button
+                  color="failure"
+                  href="./buy"
+                  onClick={() => setOpenModal(false)}
+                >
+                  {"Yes, I'm sure"}
+                </Button>
+                <Button color="gray" onClick={() => setOpenModal(false)}>
+                  No, cancel
+                </Button>
+              </div>
+            </div>
+          </Modal.Body>
+        </Modal>
+      )}
     </div>
   );
-};
-
-export default ServiceCard;
+}

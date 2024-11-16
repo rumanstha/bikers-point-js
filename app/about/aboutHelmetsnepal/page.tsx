@@ -7,10 +7,10 @@ const AboutHelmetsNepal = () => {
       {/* Left side: Heading section */}
       <div className="flex flex-col items-start justify-center text-left text-black md:w-1/2 space-y-4">
         <h3 className="text-xl font-semibold">About Us</h3>
-        <h1 className="text-3xl font-bold">Helmets Nepal Pvt. Ltd.</h1>
+        <h1 className="text-3xl font-bold">QUIXWEARS Pvt. Ltd.</h1>
         <h3 className="text-xl font-semibold">A Little About Us</h3>
         <img
-          src="/favicon.png"
+          src="/favicon.ico"
           className="h-6 sm:h-9"
           alt="Flowbite React Logo"
         />
@@ -19,22 +19,20 @@ const AboutHelmetsNepal = () => {
       {/* Right side: Paragraph section */}
       <div className="text-black md:w-1/2">
         <p className="text-justify">
-          Helmets Nepal is the result of a technological revolution and growing
-          e-commerce industry, that encouraged us to create “a one-stop digital
-          platform” for bike lovers. We sell fashion with protection ensuring
-          quality and with the promise of reliability. But above all, one thing
-          we prioritize in selling is “Road Safety”. Our Story: A story of many
-          firsts and every one of them was a blessing.
-          <br />
-          Helmets Nepal began operation in Kathmandu in 2016 as the first
-          complete online one-click platform in Nepal with a store in Anamnagar.
-          The same year, we became the first motorcycle safety gear and
-          accessories retail store in the industry to introduce the concept of
-          showrooms in Nepal by opening our first one in Maitighar. Another
-          showroom followed in Teku, next to our corporate office in 2019. In
-          early 2021, we opened our third showroom in Nagpokhari. Now Helmets
-          Nepal is the go-to platform and place for safety gear ranging from
-          varieties of helmets, safety apparel, lubricants, and riding techs.
+          Welcome to QUIXWEARS, your go-to destination for fashion-forward,
+          comfortable, and stylish apparel. We believe that fashion should not
+          only make you look good but also feel good. Starting with our
+          exclusive line of premium t-shirts, we’ve put a focus on combining
+          modern trends with top-quality materials to create the perfect
+          wardrobe essentials for everyday wear.
+          <br></br>
+          But we’re just getting started. At QUIXWEARS, we have big plans for
+          the future. While t-shirts are our current specialty, we are excited
+          to expand our offerings soon to include a wider range of products that
+          suit your lifestyle—think fashionable outerwear, cozy hoodies, trendy
+          accessories, and much more. Our goal is to provide a one-stop fashion
+          destination where you can find pieces that reflect your individuality
+          and personal style.
         </p>
       </div>
     </div>
